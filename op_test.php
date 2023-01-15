@@ -40,6 +40,11 @@ class Polynomial
 
     return new Polynomial($result);
   }
+
+  public function square()
+  {
+    return $this->multiply($this);
+  }
   public function evaluate($x)
   {
     $result = 0;
